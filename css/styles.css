@@ -1,0 +1,134 @@
+:root {
+  --rojo-flama: #ff3c2f;
+  --naranja-flama: #ff7a18;
+  --negro: #0b0b0b;
+  --gris: #1a1a1a;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GENERAL */
+body {
+  background-color: var(--negro);
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* NAVBAR */
+.nav-link {
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--naranja-flama);
+  text-shadow: 0 0 5px var(--rojo-flama);
+}
+
+.nav-link.active {
+  color: var(--rojo-flama);
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(10,10,10,0.8), rgba(0,0,0,0.95)),
+              url("../img/fondo1.jpg") center/cover no-repeat;
+}
+
+.hero h1 {
+  color: var(--rojo-flama);
+  text-shadow: 0 0 15px var(--naranja-flama);
+}
+
+.hero .lead {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 750px;
+  margin: auto;
+}
+
+/* BOTONES */
+.btn-flama {
+  background: linear-gradient(45deg, var(--rojo-flama), var(--naranja-flama));
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  transition: 0.3s;
+}
+
+.btn-flama:hover {
+  box-shadow: 0 0 15px var(--rojo-flama);
+}
+
+.btn-ig {
+  background: linear-gradient(45deg, #fd1d1d, #fcb045);
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  transition: 0.3s;
+}
+
+.btn-ig:hover {
+  box-shadow: 0 0 15px #fd1d1d;
+}
+
+
+.btn-wsp {
+  background: #25d366;
+  border: none;
+  color: white;
+  padding: 12px 25px;
+}
+
+.btn-wsp:hover {
+  box-shadow: 0 0 15px #25d366;
+}
+
+/* CARDS */
+.card-flama {
+  background-color: var(--blanco);
+  border: 1px solid var(--rojo-flama);
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255,60,47,0.4);
+  transition: transform 0.3s ease;
+}
+
+.card-flama:hover {
+  transform: translateY(-5px);
+}
+
+/* FOOTER */
+.footer-flama {
+  background-color: black;
+  padding: 40px 0;
+  margin-top: 60px;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.footer-link:hover {
+  color: var(--naranja-flama);
+  text-shadow: 0 0 5px var(--rojo-flama);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero .lead {
+    font-size: 0.95rem;
+  }
+}
