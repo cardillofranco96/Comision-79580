@@ -2,110 +2,98 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Sobre mí | Flama Gamer</title>
+  <title>Flama Gamer | Sobre mí</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Bootstrap CSS -->
+  <!-- Tipografía -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
-  <!-- CSS propio -->
+  <!-- CSS -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-<!--  HEADER / NAV  -->
 <header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top shadow">
     <div class="container">
       <a class="navbar-brand" href="index.html">Flama Gamer</a>
-
-      <!-- Botón hamburguesa -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <!-- Menú -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="servicios.html">Servicios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="sobre-mi.html">Sobre mí</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contacto.html">Contacto</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link active" href="sobre-mi.html">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
         </ul>
       </div>
     </div>
   </nav>
 </header>
 
-<!-- MAIN  -->
-<main class="container py-5">
+<main class="container py-5 mt-5 text-light">
 
-  <!-- Sección presentación -->
+  <!-- Presentación -->
   <section class="text-center mb-5">
-    <h1 class="text-danger">¿Quién está detrás de Flama Gamer?</h1>
+    <h1 class="title-flama">¿Quién está detrás de Flama Gamer?</h1>
     <p class="lead">
-      Soy Franco, técnico en soporte y reparación de computadoras, apasionado por el mundo gamer
-      y la optimización de equipos para sacarles el máximo rendimiento.
+      Soy Franco, técnico en soporte y reparación de PCs, apasionado por el mundo gamer
+      y por llevar cada equipo al máximo rendimiento posible.
     </p>
   </section>
 
-  <!-- Sección historia -->
+  <!-- Historia -->
   <section class="row align-items-center mb-5">
     <div class="col-md-6">
       <img src="img/setup.jpg" class="img-fluid rounded"
-        alt="Setup gamer de Flama Gamer con iluminación roja y estilo gaming">
+        alt="Setup gamer con iluminación roja y estilo Flama Gamer">
     </div>
     <div class="col-md-6">
-      <h2>Mi historia</h2>
+      <h2 class="text-danger">Mi historia</h2>
       <p>
-        Flama Gamer nació con la idea de ofrecer un servicio personalizado, honesto y profesional
-        para gamers que buscan mejorar su experiencia. Desde limpiezas profundas hasta upgrades completos,
-        cada PC se trata como si fuera propia.
+        Flama Gamer nace como un proyecto personal para brindar un servicio honesto,
+        profesional y 100% enfocado en el rendimiento real de cada PC.
+      </p>
+      <p>
+        Cada armado, cada limpieza y cada upgrade se hace como si fuera mi propia máquina.
       </p>
     </div>
   </section>
 
-  <!-- Sección valores -->
+  <!-- Valores -->
   <section class="row text-center">
     <div class="col-md-4 mb-4">
       <i class="bi bi-lightning-charge-fill text-warning fs-1"></i>
-      <h3>Rapidez</h3>
-      <p>Diagnósticos claros y soluciones rápidas para que vuelvas a jugar lo antes posible.</p>
+      <h3>Velocidad</h3>
+      <p>Soluciones rápidas para que vuelvas a jugar sin perder tiempo.</p>
     </div>
     <div class="col-md-4 mb-4">
       <i class="bi bi-shield-check text-danger fs-1"></i>
       <h3>Confianza</h3>
-      <p>Transparencia total en presupuestos y componentes utilizados.</p>
+      <p>Presupuestos claros, componentes reales y cero vueltas.</p>
     </div>
     <div class="col-md-4 mb-4">
       <i class="bi bi-fire text-warning fs-1"></i>
       <h3>Pasión gamer</h3>
-      <p>No es solo trabajo, es amor por el hardware y el gaming.</p>
+      <p>Esto no es solo trabajo, es cultura gamer.</p>
     </div>
   </section>
 
 </main>
 
-<!-- FOOTER  -->
-<footer class="bg-dark text-center py-4">
-  <p class="text-light mb-0">
-    © 2026 Flama Gamer – Reparación, soporte y optimización de PCs gamer
-  </p>
+<footer class="footer-flama">
+  <div class="container text-center">
+    <p>© 2026 Flama Gamer - Todos los derechos reservados</p>
+  </div>
 </footer>
 
-<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
